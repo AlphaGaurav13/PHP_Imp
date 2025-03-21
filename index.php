@@ -42,8 +42,8 @@
       echo "My File Extension IS : " . $fileext . "<br/>";
 
 
-      if (!is_dir("myfile")) {
-        if (mkdir("myfile")) {
+      if (!is_dir("Gaurav")) {
+        if (mkdir("Gaurav",0777, true)) {
           echo "Ban GYa directory";
         } else {
           echo "Nahi bna";
