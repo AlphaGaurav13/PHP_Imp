@@ -49,7 +49,21 @@
           echo "Nahi bna";
         }
       }
+      if(move_uploaded_file($filetmpname, "Gaurav1".$filename)) {
+        echo "File uploaded successfully";
+      }else {
+        echo "File not uploaded";
+      }
       //bro
+     echo "<br/>";
+      $allowedfiletype = ["pdf"];
+      if(!in_array($fileext, $allowedfiletype)) {
+        echo "File type not allowed";
+      }else {
+        echo "Your File type is supported";
+      }
+
+
     }
   }
   ?>
