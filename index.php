@@ -40,7 +40,16 @@
       echo "My File type IS : " . $filetype . "<br/>";
       echo "My File tmp name IS : " . $filetmpname . "<br/>";
       echo "My File Extension IS : " . $fileext . "<br/>";
-//bro
+
+
+      if (!is_dir("myfile")) {
+        if (mkdir("myfile")) {
+          echo "Ban GYa directory";
+        } else {
+          echo "Nahi bna";
+        }
+      }
+      //bro
     }
   }
   ?>
